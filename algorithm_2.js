@@ -10,7 +10,7 @@ const phoneNumbers = [
   "09856635214",
   "09741253548",
 ];
-var caller = "09875515265"; // or change it to random number that is not same in any of these array above e.g. 09875515265
+var caller = "09856635214"; // or change it to random number that is not same in any of these array above e.g. 09875515265
 
 var found = 0; // flag variable
 
@@ -18,6 +18,7 @@ for (let i = 0; i < phoneNumbers.length; i++) {
   if (caller == phoneNumbers[i]) {
     // if this condition satisfy, overwrite the found variable into equals 1
     found = 1;
+    break; // stop the loop once the caller found
   }
 }
 
