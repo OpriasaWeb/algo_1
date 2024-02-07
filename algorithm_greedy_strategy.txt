@@ -1,0 +1,11 @@
+Making greedy choices is an important problem-solving strategy in algorithm design, and there are many problems for which it produces good results.
+
+Psuedocode:
+
+SET current best TO the first offer you get
+WHILE new offers come in:
+        IF the new offer is better than current best:
+                REJECT current best
+                SET current best TO new offer
+        ELSE
+                REJECT new offer

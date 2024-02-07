@@ -1,0 +1,13 @@
+When writing down the algorithm, you need to be able to refer to any hospital or candidate — not only the ones that have been named in the examples. In the pseudocode, H refers to a hospital and K refers to a candidate. As the algorithm progresses H and K will run through all the different hospitals and candidates respectively.
+
+Psuedocode
+
+WHILE any hospital H has an opening and offers to make:
+        SET K to H's top candidate
+        IF K prefers H to any currently-held offer:
+                K REJECTS any current offer they have
+                K TENTATIVELY ACCEPTS H as current offer
+        ELSE
+                K rejects H's offer
+        CROSS OFF K from H's list
+FINALIZE all tentative matches
